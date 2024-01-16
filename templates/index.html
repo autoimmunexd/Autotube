@@ -2,13 +2,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Large Input Form</title>
+  <title>Autotube</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Include Bootstrap CSS link -->
   <style>
     body {
       display: flex;
@@ -19,9 +17,19 @@
     }
   </style>
 </head>
-
+<!-- 
+  provide defaults of highest quality and mp4
+  <input>
+  <download location>
+  <quality>
+  <format>
+ -->
 <body>
-  {{ form_macro.large_input_form(form, "Large Input Form", "url_input", "url_submit") }}
+  {{ form_macro.large_input_form(
+  form,
+  "Autotube Youtube Downloader",
+  "url_input",
+  "url_submit"
+  ) }}
 </body>
-
 </html>
