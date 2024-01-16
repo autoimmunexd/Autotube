@@ -1,0 +1,13 @@
+{% macro large_input_form(form, title, input_id, submit_id) %}
+  <div class="form-container">
+    <h2 class="mb-4">{{ title }}</h2>
+    <form class="form-inline" method="POST">
+      <div class="form-group">
+        {{ form.url_input_string.label(class="form-label", id=input_id) }}
+        {{ form.url_input_string(class="form-control mb-3") }}
+      </div>
+      {{ form.hidden_tag() }}
+      {{ form.submit_button(class="btn btn-primary", id=submit_id) }}
+    </form>
+  </div>
+{% endmacro %}
